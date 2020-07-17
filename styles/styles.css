@@ -487,6 +487,9 @@ hr {
   .box svg {
     display: block;
     margin:auto;
+    -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
   
   }
 
