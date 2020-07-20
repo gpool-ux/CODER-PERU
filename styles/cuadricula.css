@@ -42,11 +42,11 @@ figure {
 .pre-scrollable {
   max-height: 340px;
 }
-html {
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
+} */
 article,
 aside,
 details,
@@ -1884,6 +1884,7 @@ pre code {
     width: 41.66666667%;
   }
   .col-sm-4 {
+    padding: 20px;
     width: 33.33333333%;
   }
   .col-sm-3 {

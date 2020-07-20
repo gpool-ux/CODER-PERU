@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODER - Welcome!</title>
+    
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core-compat.js"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/cuadricula.css"> 
      <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="./img/favicon.png">
+     <!-- Custom styles for this template -->
+     <link href="assets/css/forms.css" rel="stylesheet">
+     <link href="assets/css/responsive.css" rel="stylesheet">
     </head>
 
   <body>
@@ -232,12 +236,16 @@
           <a href="index.html#portafolio">PORTAFOLIO</a>
           <a href="index.html#contacto">CONTACTO</a>
       </div> 
-    <section id="nosotros" class="section1">
-          <div class="subtitulos1">
+    <!-- <section id="nosotros" class="section1"> -->
+      <section id="about">
+        <div class="container">
+         <!--  <div class="subtitulos1"> -->
+           <div class="titulos">
               <h1>Sobre Nosotros</h1>
+              <img src="assets/img/lines.svg" class="subrayado" alt="lines">
             </div>
       <div class="about">
-        <div class="about-c1">
+        <div class="col-1">
           <!--COLUMNA 1-->
          
           <p>
@@ -260,21 +268,24 @@
           </p>
         </div>
 
-        <div class="about-c2">
+        <div class="col-2">
           <!--COLUMNA 2-->
-          <div class="sombra">
-          <img src="./img/OVNI.png" /></div>
+          <img src="./img/OVNI.png" />
           <h2>NOSOTROS LOS MEJORES</h2>
         </div>
       </div>
+    </div>
     </section>
    
-    <section id="servicios" class="section2">
-      <div class="subtitulos2">
+  <!--   <section id="servicios" class="section2"> -->
+    <section id="services">
+      <div class="container">
+      <div class="titulos">
           <h1>Servicios</h1>
+          <img src="assets/img/lines.svg" class="subrayado" alt="lines">
         </div>
       <div class="services">
-          <div class="services-c1">
+          <div class="col-1">
               <!--COLUMNA 1-->
          
           <ul class="list-service">
@@ -288,7 +299,7 @@
               
           </ul>     
         </div>
-        <div class="services-c2">
+        <div class="col-2">
           <!--COLUMNA 2-->
          
           <ul class="list-service">
@@ -304,45 +315,127 @@
         </div>
     </div>
           </div>
-      </div>
+  
     </section>
-    <section id="portafolio" class="section1">
-      <div class="subtitulos1">
-          <h1>Portafolio</h1>
-        </div>
-  <div class="about">
-    <div class="about-c1">
-      <!--COLUMNA 1-->
-     
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-        consequatur unde delectus ad vero fugit asperiores, dignissimos
-        doloribus iusto modi autem repellendus a ullam? Ea fugit quo
-        laborum harum quisquam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-        consequatur unde delectus ad vero fugit asperiores, dignissimos
-        doloribus iusto modi autem repellendus a ullam? Ea fugit quo
-        laborum harum quisquam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-        consequatur unde delectus ad vero fugit asperiores, dignissimos
-        doloribus iusto modi autem repellendus a ullam? Ea fugit quo
-        laborum harum quisquam.
-      </p>
-    </div>
-<div class="about-c2">
-      <!--COLUMNA 2-->
-      <img src="./img/OVNI.png" alt="" />
-      <h2>NOSOTROS LOS MEJORES</h2>
-    </div>
+<section id="portfolio" class="site-section section-portfolio">
+  <div class="container">
+      <div class="titulos">
+          <h1>Trabajos recientes</h1>
+          <img src="assets/img/lines.svg" class="subrayado" alt="lines">
+          
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                  <img src="assets/img/mirandastour.jpg" class="img-res" alt="">
+                  <div class="portfolio-item-info">
+                      <h4>Mirandas Tour's</h4>
+                    
+                      <a href="http://mirandastour.com.pe"><span class="glyphicon glyphicon-link"></span></a>
+                  </div><!-- /.portfolio-item-info -->
+              </div><!-- /.portfolio-item -->
+          </div>
+          <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                  <img src="assets/img/armariolu.jpg" class="img-res" alt="">
+                  <div class="portfolio-item-info">
+                      <h4>Lu y su armario</h4>
+                     
+                      <a href="https://luysuarmario.com"><span class="glyphicon glyphicon-link"></span></a>
+                  </div><!-- /.portfolio-item-info -->
+              </div><!-- /.portfolio-item -->
+          </div>
+          <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                  <img src="assets/img/rks.jpg" class="img-res" alt="">
+                  <div class="portfolio-item-info">
+                      <h4>RKS PERÚ</h4>
+                      <a href="https://rksperu.com"><span class="glyphicon glyphicon-link"></span></a>
+                  </div><!-- /.portfolio-item-info -->
+              </div><!-- /.portfolio-item -->
+          </div>
+      </div>
   </div>
-</section>
+</section><!-- /.secton-portfolio -->
+<section id="contact" class="section-form text-center">
+  <div class="titulos">
+    <h1>Contactános</h1>
+    <img src="assets/img/lines.svg" class="subrayado" alt="lines">
+    
+</div>
+      <form class="gform pure-form pure-form-stacked" id="google_form">
+          <div class="row">
+              <div class="col-sm-6">
+                  <input id="NOMBRE"  type="text" name="NOMBRE" class="form-control mt-x-0" placeholder="Nombre" required>
+              </div>
+              <div class="col-sm-6">
+                  <input id="EMAIL" type="email" name="EMAIL" class="form-control" placeholder="Email" required>   
+              </div>
+              <div class="col-sm-12">
+                  <textarea id="MENSAJE" name="MENSAJE" class="form-control" placeholder="Mensaje" required></textarea>
+              </div>
+          </div>
+          <button href="#" class="btn btn-border" type="submit">Enviar <span class="glyphicon glyphicon-send"></span></button>
+          <button  type="reset" class="btn buttonCustomPrimary" >Limpiar X </button>
+      </form>
+  </div>
+</section><!-- /.section-form -->
 
+</main><!-- /#main -->
+
+<footer id="footer" class="site-footer">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-4 col-xs-12">
+          <a class="icon facebook-bg" href="https://www.facebook.com/coderdesignpe"><i class="icon-facebook"></i></a>
+          <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
+          <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
+          <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+      </div>
+      <div class="text-center"><p class="copyright">2020.</br> Todos los derechos reservados ©</p></div>
+    
+  </div>
+</div>
+</footer><!-- /#footer -->
+
+
+<script type="text/javascript">
+  $('#google_form').submit(function(e){
+      e.preventDefault();
+      var formData = $('#google_form').serialize();
+      var nombreForm = $('#NOMBRE').val();
+      var emailForm = $('#EMAIL').val();
+      var mensajeForm = $('#MENSAJE').val();
+      if(nombreForm == '' && emailForm == ''  && mensajeForm == '' ){
+        alert("Verifique que los campos no esten vacios");
+      }else{
+        $.ajax({
+            type        : 'POST', 
+            url         : 'https://script.google.com/macros/s/AKfycbzcEPMs-HtQ2NezGGKxq1DZmT22nT-Ssn-6CbGOXHRgswS4efs/exec',
+            data        : formData, 
+            dataType    : 'json',
+            encode      : true
+       }).done(function(data) {
+            if(data.result == 'success') {
+                alert("Mensaje enviado!");
+             
+              $('#NOMBRES').val('');
+              $('#EMAIL').val('');
+              $('#MENSAJE').val('');
+            } else{
+               alert("Mensaje fallido!");
+            }
+       }).fail(function (jqXHR,status,err) {
+               
+            alert(err);
+       });
+      }
+      
+  });
+</script>
   </body>
   <script src="./script/general.min.js"></script>
   <script src="./script/default.min.js"></script>
   <script src="./script/main.js"></script>
+  
   </html>
