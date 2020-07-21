@@ -1338,6 +1338,7 @@ mark {
 .text-right {
   text-align: right;
 }
+
 .text-center {
   text-align: center;
 }
@@ -2614,7 +2615,6 @@ input[type="radio"] {
   margin-top: 1px\9;
   line-height: normal;
 }
-.form-control,
 output {
   font-size: 13px;
   line-height: 1.42857143;

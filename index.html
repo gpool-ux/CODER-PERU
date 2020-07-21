@@ -43,7 +43,7 @@
 </script>
 <!--WIDGET -->
 
-<div id="preloader" class="box" style="max-width: 100%;">
+<div id="preloader" class="box">
   <svg width="170" height="170">
     <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
     <animateTransform 
@@ -96,11 +96,11 @@
         </a>
           </div>
         <ul class="options">
-          <li><a href="index.html#slider" class="active" onclick="toggler()">INICIO</a></li>
-          <li><a href="index.html#nosotros" onclick="toggler()">NOSOTROS</a></li>
-          <li><a href="index.html#servicios" onclick="toggler()">SERVICIOS</a></li>
-          <li><a href="index.html#portafolio" onclick="toggler()">PORTAFOLIO</a></li>
-          <li><a href="index.html#contacto" onclick="toggler()">CONTACTO</a></li>
+          <li><a href="index.html#header" class="active" onclick="toggler()">INICIO</a></li>
+          <li><a href="index.html#about" onclick="toggler()">NOSOTROS</a></li>
+          <li><a href="index.html#services" onclick="toggler()">SERVICIOS</a></li>
+          <li><a href="index.html#portfolio" onclick="toggler()">PORTAFOLIO</a></li>
+          <li><a href="index.html#contact" onclick="toggler()">CONTACTO</a></li>
         </ul>
       <hr>
         <div class="toggler" onclick="toggler()"></div>
@@ -230,11 +230,11 @@
 </div>
 
       <div class="menu">
-          <a href="index.html#mosaico">INICIO</a>
-          <a href="index.html#nosotros">SOBRE NOSOTROS</a>
-          <a href="index.html#servicios">SERVICIOS</a>
-          <a href="index.html#portafolio">PORTAFOLIO</a>
-          <a href="index.html#contacto">CONTACTO</a>
+          <a href="index.html#header">INICIO</a>
+          <a href="index.html#about">SOBRE NOSOTROS</a>
+          <a href="index.html#services">SERVICIOS</a>
+          <a href="index.html#portfolio">PORTAFOLIO</a>
+          <a href="index.html#contact">CONTACTO</a>
       </div> 
     <!-- <section id="nosotros" class="section1"> -->
       <section id="about">
@@ -315,49 +315,45 @@
         </div>
     </div>
           </div>
-  
     </section>
-<section id="portfolio" class="site-section section-portfolio">
-  <div class="container">
+<section id="portfolio" >
+ <div class="container">
       <div class="titulos">
           <h1>Trabajos recientes</h1>
           <img src="assets/img/lines.svg" class="subrayado" alt="lines">
           
       </div>
       <div class="row">
-          <div class="col-md-4 col-xs-6">
+          <div  class="portfolio-grill">
               <div class="portfolio-item">
-                  <img src="./assets/img/mirandastour.JPG" class="img-res" alt="">
-                  <div class="portfolio-item-info">
+                  <img src="./assets/img/mirandastour.png" class="img-res" alt="">
+                  <div class="portfolio-item-info" >
                       <h4>Mirandas Tour's</h4>
                     
-                      <a href="http://mirandastour.com.pe"><span class="glyphicon glyphicon-link"></span></a>
-                  </div><!-- /.portfolio-item-info -->
-              </div><!-- /.portfolio-item -->
-          </div>
+                      <a href="http://mirandastour.com.pe"><span class="glyphicon glyphicon-link" ></span></a>
+                  </div>
+              </div>
          
-          <div class="col-md-4 col-xs-6">
               <div class="portfolio-item">
                   <img src="./assets/img/armariolu.JPG" class="img-res" alt="">
                   <div class="portfolio-item-info">
                       <h4>Lu y su armario</h4>
                      
                       <a href="https://luysuarmario.com"><span class="glyphicon glyphicon-link"></span></a>
-                  </div><!-- /.portfolio-item-info -->
-              </div><!-- /.portfolio-item -->
-          </div>
-          <div class="col-md-4 col-xs-6">
+                  </div>
+              </div>
+         
               <div class="portfolio-item">
                   <img src="./assets/img/rks.JPG" class="img-res" alt="">
                   <div class="portfolio-item-info">
                       <h4>RKS PERÚ</h4>
                       <a href="https://rksperu.com"><span class="glyphicon glyphicon-link"></span></a>
-                  </div><!-- /.portfolio-item-info -->
-              </div><!-- /.portfolio-item -->
+                  </div>
+              </div>
           </div>
       </div>
-  </div>
-</section><!-- /.secton-portfolio -->
+    
+</section>
 <section id="contact" class="section-form text-center">
   <div class="titulos">
     <h1>Contactános</h1>
@@ -372,28 +368,36 @@
               <div class="col-sm-6">
                   <input id="EMAIL" type="email" name="EMAIL" class="form-control" placeholder="Email" required>   
               </div>
+              <br>
+              <div class="col-sm-6">
+                <input id="PHONE" type="phone" name="PHONE" class="form-control" placeholder="Telefono" required>   
+            </div>
               <div class="col-sm-12">
                   <textarea id="MENSAJE" name="MENSAJE" class="form-control" placeholder="Mensaje" required></textarea>
               </div>
           </div>
           <button href="#" class="btn btn-border" type="submit">Enviar <span class="glyphicon glyphicon-send"></span></button>
-          <button  type="reset" class="btn buttonCustomPrimary" >Limpiar X </button>
+          <button  type="reset" class="btn" >Limpiar X </button>
       </form>
   </div>
-</section><!-- /.section-form -->
+</section>
 
-</main><!-- /#main -->
 
+
+
+<!-- FOTOTWER -->
 <footer id="footer" class="site-footer">
 <div class="container">
   <div class="row">
-      <div class="col-sm-4 col-xs-12">
+    <div class="text-center"><p class="copyright">2020.</br> Todos los derechos reservados ©</p>
+     
+          <div class="redes">
           <a class="icon facebook-bg" href="https://www.facebook.com/coderdesignpe"><i class="icon-facebook"></i></a>
           <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
           <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
           <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+        </div>
       </div>
-      <div class="text-center"><p class="copyright">2020.</br> Todos los derechos reservados ©</p></div>
     
   </div>
 </div>
@@ -406,8 +410,9 @@
       var formData = $('#google_form').serialize();
       var nombreForm = $('#NOMBRE').val();
       var emailForm = $('#EMAIL').val();
+      var telefonoForm = $('#PHONE').val();
       var mensajeForm = $('#MENSAJE').val();
-      if(nombreForm == '' && emailForm == ''  && mensajeForm == '' ){
+      if(nombreForm == '' && emailForm == ''  && telefonoForm == '' && mensajeForm == ''  ){
         alert("Verifique que los campos no esten vacios");
       }else{
         $.ajax({
@@ -420,8 +425,9 @@
             if(data.result == 'success') {
                 alert("Mensaje enviado!");
              
-              $('#NOMBRES').val('');
+              $('#NOMBRE').val('');
               $('#EMAIL').val('');
+              $('#PHONE').val('');
               $('#MENSAJE').val('');
             } else{
                alert("Mensaje fallido!");
