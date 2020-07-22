@@ -1,8 +1,5 @@
 @media only screen and (max-width: 991px) {
-  .portfolio-grill {
-    width: 100%;
-    padding: 0;
-  }
+ 
 }
 
 /*CELULAR MOVIL*/
@@ -11,7 +8,7 @@
     padding: 0 !important;
     position: sticky;
     top: 0;
-    border:1.5px solid black;
+   
   }
  
   header ul {
@@ -109,11 +106,9 @@
   hr {
     margin-top: 5px !important;
     margin-bottom: 1px !important;
-    border: none !important;
+   border:1.5px solid black;
   }
-  .about-c1 {
-    border-right: none;
-  }
+ 
 
   .about,
   .services {
@@ -130,6 +125,11 @@
   #services {
     border-top-left-radius: 0;
     background: #541742;
+  }
+
+ .portfolio-grill {
+    width: 100%;
+    padding: 0;
   }
 
   #contact {
