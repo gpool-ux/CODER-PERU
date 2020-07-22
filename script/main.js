@@ -22,4 +22,34 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//////////
+const body = document.body;
+const triggerMenu = document.querySelector(".header .toggler");
+const nav = document.querySelector(".header ");
+const menu = document.querySelector(".header .options");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
 
+triggerMenu.addEventListener("click", () => {
+  body.classList.toggle("toggler");
+});
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll == 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
+  
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+  } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
+    // up
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+  }
+  lastScroll = currentScroll;
+});
