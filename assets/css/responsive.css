@@ -9,6 +9,7 @@
 
     position: sticky;
     top: 0;
+    border-bottom: 2px solid purple;
   }
   
 
@@ -93,19 +94,13 @@
     text-align: center;
     padding: 0 !important;
 }
-  .options {
-    display: flex;
-    height: 100vw;
-    padding-top: 35px;
-
-  }
-
+ 
   .menu {
     display: none;
   }
   .options {
     display: flex;
-    height: 550px;
+    height: 500px;
     padding-top: 35px;
     list-style: none !important;
   }
@@ -123,10 +118,7 @@
     border-right: none;
   }
   hr {
-    margin-top: 5px !important;
-    margin-bottom: 1px !important;
-    border:1.5px solid black;
-    border: none !important;
+   display: none;
   }
 
 
