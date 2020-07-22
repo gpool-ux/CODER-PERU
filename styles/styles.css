@@ -53,6 +53,12 @@ body {
 }
 .open{
 overflow:hidden;}
+
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+  background: orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
 /***********************HEADER********************/
 header {
   position: relative;
