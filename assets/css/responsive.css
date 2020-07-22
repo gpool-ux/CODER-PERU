@@ -81,7 +81,7 @@
   }
   .options {
     display: flex;
-    height: 100vh;
+    height: 100vw;
     padding-top: 35px;
   }
   .menu {
