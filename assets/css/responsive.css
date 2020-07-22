@@ -2,17 +2,15 @@
 @media (max-width: 991px) {
   header {
     padding: 0 !important;
-<<<<<<< HEAD
     /******MENU RESPONSIVE PERSIGUE*******/
     /* position: sticky;
     top: 0; */
     /* display: block; */ /* SI QUIERO EL TOGGLER AL COSTADO */
-=======
+
     position: sticky;
     top: 0;
-   
->>>>>>> 25c6d5d987fd91d75c4a9fb4b2e5cb1766afd26b
   }
+  
 
   header ul {
     position: absolute;
@@ -89,18 +87,17 @@
     bottom: 14px;
     transform: rotate(-45deg);
   }
-<<<<<<< HEAD
 
   section {
     display: block;
     text-align: center;
     padding: 0 !important;
-=======
+}
   .options {
     display: flex;
     height: 100vw;
     padding-top: 35px;
->>>>>>> 25c6d5d987fd91d75c4a9fb4b2e5cb1766afd26b
+
   }
 
   .menu {
@@ -128,15 +125,11 @@
   hr {
     margin-top: 5px !important;
     margin-bottom: 1px !important;
-<<<<<<< HEAD
+    border:1.5px solid black;
     border: none !important;
   }
-=======
-   border:1.5px solid black;
-  }
- 
 
->>>>>>> 25c6d5d987fd91d75c4a9fb4b2e5cb1766afd26b
+
   .about,
   .services {
     width: 100%;
