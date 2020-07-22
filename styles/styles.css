@@ -51,6 +51,8 @@ body {
     opacity: 0;
   }
 }
+.open{
+overflow:hidden;}
 /***********************HEADER********************/
 header {
   position: relative;
