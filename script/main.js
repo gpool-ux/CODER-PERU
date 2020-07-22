@@ -32,7 +32,7 @@ const scrollDown = "scroll-down";
 let lastScroll = 0;
 
 triggerMenu.addEventListener("click", () => {
-  body.classList.toggle("toggler");
+  body.classList.toggle("header");
 });
 
 window.addEventListener("scroll", () => {
