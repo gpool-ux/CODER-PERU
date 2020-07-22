@@ -1,7 +1,3 @@
-@media only screen and (max-width: 991px) {
- 
-}
-
 /*CELULAR MOVIL*/
 @media (max-width: 991px) {
   header {
@@ -85,7 +81,7 @@
   }
   .options {
     display: flex;
-    height: 400px;
+    height: 100vh
     padding-top: 35px;
   }
   .menu {
