@@ -132,50 +132,6 @@ hr {
 /******************ANIMACIONES*************************/
 /* BACKGROUND PARPADEO */
 
-@-webkit-keyframes blink {
-  0% {
-    background: #070f39;
-  }
-  50% {
-    background: #df4ba1;
-  }
-  100% {
-    background: #541742;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    background: #070f39;
-  }
-  50% {
-    background: #df4ba1;
-  }
-  100% {
-    background: #541742;
-  }
-}
-@-ms-keyframes blink {
-  0% {
-    background: #070f39;
-  }
-  50% {
-    background: #df4ba1;
-  }
-  100% {
-    background: #541742;
-  }
-}
-@keyframes blink {
-  0% {
-    background: #070f39;
-  }
-  50% {
-    background: #df4ba1;
-  }
-  100% {
-    background: #541742;
-  }
-}
 
 /****************LOGO********************/
 .logo {
@@ -374,6 +330,53 @@ section:nth-child(even) {
   border: 3px solid #541742;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    background: #070f39;
+  }
+  50% {
+    background: #df4ba1;
+  }
+  100% {
+    background: #541742;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    background: #070f39;
+  }
+  50% {
+    background: #df4ba1;
+  }
+  100% {
+    background: #541742;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    background: #070f39;
+  }
+  50% {
+    background: #df4ba1;
+  }
+  100% {
+    background: #541742;
+  }
+}
+@keyframes blink {
+  0% {
+    background: #070f39;
+  }
+  50% {
+    background: #df4ba1;
+  }
+  100% {
+    background: #541742;
+  }
+}
+.box {
+  width: 100%;
+}
 .box svg {
   position: relative;
   left: 0;
@@ -382,9 +385,10 @@ section:nth-child(even) {
   margin: auto;
   z-index: inherit;
   border-radius: 100%;
-  /*   -webkit-animation: blink 1s infinite;
+    /* -webkit-animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
   -ms-animation: blink 1s infinite; */
+  animation: blink 1s infinite;
   overflow: hidden;
 }
 
@@ -780,9 +784,11 @@ a.github {
   .box svg {
     display: block;
     margin: auto;
-    -webkit-animation: blink 1s infinite;
+    /* -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
-    -ms-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite; */
+    animation: blink 1s infinite;
+    left: -70px;
   }
 
   .box2 svg,
