@@ -156,8 +156,7 @@ hr {
 
 /************SECTION**********/
 section {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: block;
   align-items: center;
   padding: 50px 50px 100px;
 }
@@ -387,19 +386,7 @@ section:nth-child(even) {
   display: block;
 }
 
-/********PORTFOLIO***********/
-.portfolio-grill {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: auto;
-}
 
-.img-res {
-  display: block;
-  width: 100vw;
-  max-width: 100%;
-
-}
 
 /* BACKGROUND BORDE LINEAL COLORES */
 @-webkit-keyframes bordes {
@@ -530,6 +517,20 @@ section:nth-child(even) {
 
 .portfolio-item-info a:hover {
   color: #212121;
+}
+
+/********PORTFOLIO***********/
+.portfolio-grill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.img-res {
+  display: block;
+  width: 100vw;
+  max-width: 100%;
+
 }
 
 /*************CONTACTO****************/
