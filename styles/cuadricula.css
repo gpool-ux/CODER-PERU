@@ -13,10 +13,6 @@
   float: left;
 }
 
-section {
-  display: block;
-}
-
 .row:after {
   clear: both;
 }
