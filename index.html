@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="stylesheet" href="./styles/cuadricula.css">
   <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="./img/favicon.png">
-<script type="text/javascript">
-  $(window).load(function () {
-    $("#preloader").delay(2500).fadeOut("slow");
-  });
-</script>
+  <script type="text/javascript">
+    $(window).load(function () {
+      $("#preloader").delay(2500).fadeOut("slow");
+    });
+
+  </script>
 </head>
 
 <body>
@@ -51,9 +52,9 @@
     })();
 
   </script>
-  <!--WIDGET -->
-  <div id="preloader" class="box" style="max-width: 100%;">
 
+  <!--WIDGET -->
+  <div id="preloader" class="box">
     <video src="./img/bgvideo.mp4" autoplay muted loop type="mp4"></video>
     <svg width="170" height="170">
       <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
@@ -80,13 +81,18 @@
       </svg>
     </div>
   </div>
+
   <a onclick="topFunction()" id="scrollUp" title="Ir arriba"></a>
+
   <header id="header" class="header">
     <div class="logo">
       <a href="index.html">
         <img src="./img/LOGO.png">
       </a>
     </div>
+
+    <div class="toggler" onclick="toggler()"></div>
+
     <ul class="options">
       <li><a href="#header" class="active" onclick="toggler()">INICIO</a></li>
       <li><a href="#about" onclick="toggler()">NOSOTROS</a></li>
@@ -94,40 +100,30 @@
       <li><a href="#portfolio" onclick="toggler()">PORTAFOLIO</a></li>
       <li><a href="#contact" onclick="toggler()">CONTACTO</a></li>
     </ul>
-
-    <div class="toggler" onclick="toggler()"></div>
   </header>
 
 
   <!-- CUADRICULA INICIO -->
   <div id="slider" class="container-fluid">
-    <div class="row" id="fila1">
+    <div class="row">
       <div class="sbox-style col-xs-6 col-sm-3">
         <div id="box" class="box-A1 hidden-xs">
-
           <!-- SLIDER 01 -->
           <!-- COLUMNA 1 || FILA 1 || BOX 1 -->
-          <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box1.png">
+          <img id="TTL715543" tLink="1" style="max-width:100%" src="./img/slider/slider-c1-box1.png">
           <!------------------------------------>
-
           <!-- SLIDER 02 -->
           <!-- COLUMNA 1 || FILA 1 || BOX 1 -->
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/A1_max_la.jpg" alt="Rampage-Devastación">
-
           <!-- SLIDER 03 -->
           <!-- COLUMNA 1 || FILA 1 || BOX 1 -->
-          <img id="TTL728041" tLink="1" style="width:100%" src="./img/slider/A1_maxprime_la.jpg"
-            alt="Vientos-De-Cambio">
-
-
+          <img id="TTL728041" tLink="1" style="width:100%" src="./img/slider/A1_maxprime_la.jpg" alt="Vientos-De-Cambio">
         </div>
 
         <div id="box" class="box-A1 visible-xs">
-
           <!-- MOBILE -->
           <!-- COLUMNA 1 || FILA 1 || BOX 1 -->
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box1.png" alt="Corazón-Borrado">
-
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/A1_maxup_la2.jpg"
             alt="Rampage-Devastación">
           <!-- MOBILE SLIDER 2-->
@@ -135,16 +131,14 @@
           <img id="TTL728041" tLink="1" style="width:100%" src="./img/slider/A1_maxprime_la.jpg"
             alt="Vientos-De-Cambio">
         </div>
-
       </div>
-      <div class="sbox-style col-xs-6 col-sm-3">
 
+      <div class="sbox-style col-xs-6 col-sm-3">
         <div id="box" class="box-B1 hidden-xs">
           <!-- SLIDER 01 -->
           <!-- COLUMNA 2 || FILA 1 || BOX 2 -->
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box2.png">
           <!------------------------------------>
-
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/B1_max_la.jpg" alt="Rampage-Devastación">
           <img id="TTL739589" tLink="1" style="width:100%" src="./img/slider/B1_maxprime_la.jpg"
             alt="Bajo-La-Torre-Eiffel">
@@ -154,21 +148,17 @@
           <!-- MOBILE 2DA| COLUMNA FILA 1 |BOX 2-->
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box2.png" alt="Corazón-Borrado">
           <!------------------------------------>
-
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/B1_maxup_la.jpg" alt="Rampage-Devastación">
           <img id="maxprime" tLink="0" style="width:100%" src="./img/slider/D1_maxprime_la.jpg" alt="">
         </div>
-
       </div>
-      <div class="sbox-style col-xs-6 col-sm-3">
 
+      <div class="sbox-style col-xs-6 col-sm-3">
         <div id="box" class="box-C1 hidden-xs">
           <!-- SLIDER 01 -->
           <!-- COLUMNA 3 || FILA 1 || BOX 3 -->
           <img id="TTL740979" tLink="1" style="width:100%" src="./img/slider/slider-c1-box3.png">
           <!------------------------------------>
-
-
           <img id="TTL715525" tLink="1" style="width:100%" src="./img/slider/C1_max_la.jpg"
             alt="Jurassic-World---El-Reino-Caído">
           <img id="TTL739589" tLink="1" style="width:100%" src="./img/slider/C1_maxprime_la.jpg"
@@ -176,28 +166,24 @@
         </div>
 
         <div id="box" class="box-C1 visible-xs">
-
           <!-- MOBILE 1RA COLUMNA| FILA 2 | BOX 1 -->
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c2-box1.png" alt="Corazón-Borrado">
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/A2_maxup_la.jpg" alt="Rampage-Devastación">
           <img id="TTL728041" tLink="1" style="width:100%" src="./img/slider/A2_maxprime_la.jpg"
             alt="Vientos-De-Cambio">
         </div>
-
       </div>
-      <div class="sbox-style col-xs-6 col-sm-3">
 
+      <div class="sbox-style col-xs-6 col-sm-3">
         <div id="box" class="box-D1 hidden-xs">
           <!-- SLIDER 01 -->
           <!-- COLUMNA 4 || FILA 1 || BOX 4 -->
           <img id="TTL740979" tLink="1" style="width:100%" src="./img/slider/slider-c1-box4.png">
           <!------------------------------------>
-
           <img id="TTL715525" tLink="1" style="width:100%" src="./img/slider/D1_max_la.jpg"
             alt="Jurassic-World---El-Reino-Caído">
           <img id="maxprime" tLink="0" style="width:100%" src="./img/slider/D1_maxprime_la.jpg" alt="">
         </div>
-
         <div id="box" class="box-D1 visible-xs">
           <img id="max" tLink="0" style="width:100%" src="./img/slider/slider-c2-box2.png" alt="">
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/B2_maxup_la2.jpg"
@@ -205,71 +191,57 @@
           <img id="TTL617439" tLink="1" style="width:100%" src="./img/slider/D2_maxprime_la.jpg"
             alt="Lujuria-En-El-Convento">
         </div>
-
       </div>
     </div>
-
-
-    <div class="row" id="fila2">
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="row">
       <div class="sbox-style col-xs-6 col-sm-3">
-
         <div id="box" class="box-A2 hidden-xs">
           <!-- FILA 2   || COLUMNA 1 || BOX 1 -->
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c2-box1.png">
           <!------------------------------------>
-
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/A2_max_la.jpg" alt="Rampage-Devastación">
           <img id="TTL728041" tLink="1" style="width:100%" src="./img/slider/A2_maxprime_la.jpg"
             alt="Vientos-De-Cambio">
         </div>
-
         <div id="box" class="box-A2 visible-xs">
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box3.png" alt="Corazón-Borrado">
           <img id="TTL718626" tLink="1" style="width:100%" src="./img/slider/A3_maxup_la.jpg" alt="Ovni">
           <img id="CPT189955" tLink="1" style="width:100%" src="./img/slider/A3_maxprime_la.jpg"
             alt="Tierra-De-Zombies">
         </div>
-
       </div>
       <div class="sbox-style col-xs-6 col-sm-3">
-
         <div id="box" class="box-B2 hidden-xs">
           <!-- FILA 2   || COLUMNA 2 || BOX 2 -->
           <img id="max" tLink="0" style="width:100%" src="./img/slider/slider-c2-box2.png">
           <!------------------------------------>
-
           <img id="TTL723132" tLink="1" style="width:100%" src="./img/slider/B2_max_la.jpg" alt="Rampage-Devastación">
           <img id="TTL739589" tLink="1" style="width:100%" src="./img/slider/B2_maxprime_la.jpg"
             alt="Bajo-La-Torre-Eiffel">
         </div>
-
         <div id="box" class="box-B2 visible-xs">
           <img id="TTL715543" tLink="1" style="width:100%" src="./img/slider/slider-c1-box4.png" alt="Corazón-Borrado">
           <img id="maxup" tLink="0" style="width:100%" src="./img/slider/B3_maxup_la.jpg" alt="">
           <img id="TTL617439" tLink="1" style="width:100%" src="./img/slider/D3_maxprime_la.jpg"
             alt="Lujuria-En-El-Convento">
         </div>
-
       </div>
       <div class="sbox-style col-xs-6 col-sm-3">
-
         <div id="box" class="box-C2 hidden-xs">
           <!-- FILA 2   || COLUMNA 3 || BOX 3 -->
           <img id="TTL740979" tLink="1" style="width:100%" src="./img/slider/slider-c2-box3.png">
           <!------------------------------------>
-
           <img id="TTL740982" tLink="1" style="width:100%" src="./img/slider/C2_max_la.jpg" alt="Ecos-En-La-Oscuridad">
           <img id="TTL739589" tLink="1" style="width:100%" src="./img/slider/C2_maxprime_la.jpg"
             alt="Bajo-La-Torre-Eiffel">
         </div>
       </div>
       <div class="sbox-style col-xs-6 col-sm-3">
-
         <div id="box" class="box-D2 hidden-xs">
           <!-- FILA 2   || COLUMNA 4 || BOX 4 -->
           <img id="TTL740979" tLink="1" style="width:100%" src="./img/slider/slider-c2-box4.png">
           <!------------------------------------>
-
           <img id="TTL740982" tLink="1" style="width:100%" src="./img/slider/D2_max_la.jpg">
           <img id="TTL617439" tLink="1" style="width:100%" src="./img/slider/D2_maxprime_la.jpg"
             alt="Lujuria-En-El-Convento">
@@ -278,7 +250,6 @@
       <div id="box_prevBtn"></div>
       <div id="box_nextBtn"></div>
     </div>
-
   </div>
 
   <div class="menu">
@@ -319,10 +290,8 @@
             laborum harum quisquam.
           </p>
         </div>
-
         <div class="col-2">
           <!--COLUMNA 2-->
-
           <img src="./img/OVNI.png" />
           <h2>NOSOTROS LOS MEJORES</h2>
         </div>
@@ -340,7 +309,6 @@
       <div class="services">
         <div class="col-1">
           <!--COLUMNA 1-->
-
           <ul class="list-service">
             <li>Design Web </li>
             <li>Creación logos</li>
@@ -349,12 +317,10 @@
             <li>Ads</li>
             <li>Marketing Digital</li>
             <li>Sesión de fotos</li>
-
           </ul>
         </div>
         <div class="col-2">
           <!--COLUMNA 2-->
-
           <ul class="list-service">
             <li>Design Web </li>
             <li>Creación logos</li>
@@ -364,7 +330,6 @@
             <li>Marketing Digital</li>
             <li>Sesión de fotos</li>
           </ul>
-
         </div>
       </div>
     </div>
@@ -428,10 +393,8 @@
           <textarea id="MENSAJE" name="MENSAJE" class="form-control" placeholder="Mensaje" required></textarea>
         </div>
       </div>
-
-      <button href="#" class="btn" type="submit">Enviar</button>
+      <button type="submit" class="btn">Enviar</button>
       <button type="reset" class="btn">Limpiar X </button>
-
     </form>
   </section>
 
@@ -455,7 +418,6 @@
         }).done(function (data) {
           if (data.result == 'success') {
             alert("Mensaje enviado!");
-
             $('#NOMBRE').val('');
             $('#EMAIL').val('');
             $('#PHONE').val('');
@@ -464,18 +426,14 @@
             alert("Mensaje fallido!");
           }
         }).fail(function (jqXHR, status, err) {
-
           alert(err);
         });
       }
-
     });
-
   </script>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-
     <div>
       <p class="copyright">2020.</br> Todos los derechos reservados ©</p>
     </div>
@@ -485,12 +443,10 @@
       <a class="icons youtube" href="#/"></a>
       <a class="icons github" href="#"></a>
     </div>
-
   </footer>
 </body>
+
 <script src="./script/main.js"></script>
 <script src="./script/general.min.js"></script>
 <script src="./script/default.min.js"></script>
-
-
 </html>
