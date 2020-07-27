@@ -31,13 +31,16 @@ body {
 }
 
 #preloader video {
-  position: fixed;
+  position: absolute;
   max-width: 100%;
-  width: 100%;
+  width: auto;
   height: auto;
-  bottom: 0;
-  top: 0;
-  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%,-50%);
+ z-index: 999999999999999999999999999;
 }
 
 
@@ -698,10 +701,10 @@ a.github {
   .box svg {
     display: block;
     margin: auto;
-    -webkit-animation: blink 1s infinite;
+   /*  -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
     -ms-animation: blink 1s infinite;
-    animation: blink 1s infinite;
+    animation: blink 1s infinite; */
 
   }
 
