@@ -699,10 +699,10 @@ a.github {
   .box svg {
     display: block;
     margin: auto;
-    -webkit-animation: blink 1s infinite;
+   /*  -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
     -ms-animation: blink 1s infinite;
-    animation: blink 1s infinite;
+    animation: blink 1s infinite; */
 
   }
 
