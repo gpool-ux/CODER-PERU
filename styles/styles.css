@@ -175,6 +175,7 @@ section:nth-child(even) {
 
 .about,
 .services {
+  position: relative;
   width: 100%;
   display: block;
   margin: auto;
