@@ -8,7 +8,6 @@
 }
 
 body {
-  background: #fff;
   font-size: 13px;
 }
 
@@ -30,6 +29,18 @@ body {
   z-index: 99999999999;
   overflow: hidden;
 }
+
+#preloader video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  pointer-events: none;
+}
+
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -92,11 +103,6 @@ hr {
   display: none !important;
 }
 
-
-/******************ANIMACIONES*************************/
-/* BACKGROUND PARPADEO */
-
-
 /****************LOGO********************/
 .logo {
   display: block;
@@ -155,22 +161,15 @@ hr {
 }
 
 /************SECTION**********/
+
+.contenedor {
+  width: 100%;
+}
+
 section {
   display: block;
   align-items: center;
   padding: 50px 50px 100px;
-}
-
-div.contenedor {
-  width: 100%;
-}
-
-.col-sm-4 {
-  float: right !important;
-}
-
-section:nth-child(even) {
-  z-index: -999999999999;
 }
 
 .about,
@@ -199,22 +198,13 @@ section:nth-child(even) {
   padding-top: 20px;
 }
 
-.col-1 h1,
-.col-1 p {
-  color: #070f39;
-  font-size: 1.5em;
-  margin: 20px;
-  text-align: justify;
-  font-family: "Orbitron", sans-serif;
+.col-1,
+.col-2 {
+  width: 100%;
 }
 
 .col-1 {
   border-right: 4px solid #070f39;
-}
-
-.col-1,
-.col-2 {
-  width: 100%;
 }
 
 .col-2 img {
@@ -223,6 +213,15 @@ section:nth-child(even) {
   width: 400px;
   max-width: 90%;
   object-fit: cover;
+}
+
+.col-1 h1,
+.col-1 p {
+  color: #070f39;
+  font-size: 1.5em;
+  margin: 20px;
+  text-align: justify;
+  font-family: "Orbitron", sans-serif;
 }
 
 .col-2 h2 {
@@ -367,11 +366,11 @@ section:nth-child(even) {
   margin: auto;
   z-index: inherit;
   border-radius: 100%;
-  -webkit-animation: blink 1s infinite;
+  /* -webkit-animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
   -ms-animation: blink 1s infinite;
   animation: blink 1s infinite;
-  overflow: hidden;
+  overflow: hidden; */
 
 }
 
@@ -491,7 +490,6 @@ section:nth-child(even) {
 .portfolio-item:hover .portfolio-item-info {
   left: 35px;
   opacity: 1;
-  height: 40px;
 }
 
 
@@ -525,6 +523,7 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
+  gap: 20px;
 }
 
 .img-res {
@@ -544,9 +543,9 @@ section:nth-child(even) {
   color: #fff;
   display: block;
   text-align: center;
-  margin: 30px;
+  margin-bottom: 30px;
   font-family: "Orbitron", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   padding-top: 20px;
 }
 
@@ -695,6 +694,24 @@ a.github {
 /********************RESPONSIVE*********************/
 /*CELULAR MOVIL*/
 @media (max-width: 991px) {
+
+  /********************PRELOADER********/
+  .box svg {
+    display: block;
+    margin: auto;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+
+  }
+
+  .box2 svg,
+  .box3 svg {
+    display: none;
+  }
+
+  /**********HEADER-MOBILE*********/
   header {
     padding: 0 !important;
     position: sticky;
@@ -783,12 +800,6 @@ a.github {
     transform: rotate(-45deg);
   }
 
-  section {
-    display: block;
-    text-align: center;
-    padding: 0 !important;
-  }
-
   .menu {
     display: none;
   }
@@ -811,16 +822,23 @@ a.github {
     height: 100% !important;
   }
 
-  #about .col-1 {
-    border-right: none;
-  }
 
   hr {
     display: none;
   }
 
-  .about,
-  .services {
+  /*********************************************/
+  section {
+    display: block;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  #about .col-1 {
+    border-right: none;
+  }
+
+  .about {
     width: 100%;
     display: block;
     margin: auto;
@@ -833,38 +851,20 @@ a.github {
     background: #541742;
   }
 
-  .portfolio-grill {
+  .services {
     width: 100%;
-    padding: 0;
-  }
-
-  #contact {
-    border-top-right-radius: 0 !important;
-    background: #541742;
-  }
-
-  #contact button {
-    margin: 20px;
-  }
-
-  .box svg {
     display: block;
     margin: auto;
-    -webkit-animation: blink 1s infinite;
-    -moz-animation: blink 1s infinite;
-    -ms-animation: blink 1s infinite;
-    animation: blink 1s infinite;
-
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .box2 svg,
-  .box3 svg {
-    display: none;
-  }
-
+  /*************PORTFOLIO*************/
   .portfolio-grill {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 0;
   }
 
   .portfolio img {
@@ -898,15 +898,25 @@ a.github {
     color: #212121;
   }
 
+  /************CONTACTO************/
+  #contact {
+    border-top-right-radius: 0 !important;
+    background: #541742;
+  }
+
+  #contact button {
+    margin: 20px;
+  }
+
   .gform {
     background: #541742;
     width: 100%;
     margin: auto;
   }
 
+  /*********FOOTER**********************/
   .redes {
     display: block;
-    /* padding: 30px; */
     margin: auto;
     text-align: center;
   }

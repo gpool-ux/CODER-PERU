@@ -14,7 +14,7 @@
 <body>
   <script type="text/javascript">
     $(window).load(function () {
-      $("#preloader").delay(400).fadeOut("slow");
+      $("#preloader").delay(2500).fadeOut("fast");
     });
 
   </script>
@@ -52,6 +52,7 @@
   </script>
   <!--WIDGET -->
   <div id="preloader" class="box">
+    <video src="./img/bgvideo.mp4" autoplay muted loop type="mp4"></video>
     <svg width="170" height="170">
       <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
       <animateTransform attributeType="XML" attributeName="transform" type="translate"
@@ -79,7 +80,7 @@
   <a onclick="topFunction()" id="scrollUp" title="Ir arriba"></a>
   <header id="header" class="header">
     <div class="logo">
-      <a href="index.html" style="text-align: center;">
+      <a href="index.html">
         <img src="./img/LOGO.png">
       </a>
     </div>
@@ -293,19 +294,21 @@
       <div class="about">
         <div class="col-1">
           <!--COLUMNA 1-->
-
+          <h1 style="text-decoration: underline;font-size: 2em;">Mision</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
             consequatur unde delectus ad vero fugit asperiores, dignissimos
             doloribus iusto modi autem repellendus a ullam? Ea fugit quo
             laborum harum quisquam.
           </p>
+          <h1 style="text-decoration: underline;font-size: 2em;">Vision</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
             consequatur unde delectus ad vero fugit asperiores, dignissimos
             doloribus iusto modi autem repellendus a ullam? Ea fugit quo
             laborum harum quisquam.
           </p>
+          <h1 style="text-decoration: underline;font-size: 2em;">Reseña</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
             consequatur unde delectus ad vero fugit asperiores, dignissimos
@@ -316,6 +319,7 @@
 
         <div class="col-2">
           <!--COLUMNA 2-->
+
           <img src="./img/OVNI.png" />
           <h2>NOSOTROS LOS MEJORES</h2>
         </div>
@@ -375,7 +379,7 @@
           <div class="portfolio-item">
             <img class="img-res" src="./assets/img/mirandastour.png" alt="">
             <div class="portfolio-item-info ">
-              <h4>MIRANDAS TOUR'S</h4>
+              <h4>MIRANDAS TOUR'S<br>(Informativa)</h4>
               <a href="http://mirandastour.com.pe"></a>
             </div>
           </div>
@@ -383,17 +387,16 @@
           <div class="portfolio-item">
             <img src="./assets/img/armariolu.JPG" class="img-res" alt="">
             <div class="portfolio-item-info">
-              <h4>LU Y SU ARMARIO</h4>
-
-              <a href="https://luysuarmario.com"></span></a>
+              <h4>LU Y SU ARMARIO<br>(eCommerce)</h4>
+              <a href="https://luysuarmario.com"></a>
             </div>
           </div>
           <!--COLUMNA 3-->
           <div class="portfolio-item">
             <img src="./assets/img/rks.JPG" class="img-res" alt="">
             <div class="portfolio-item-info">
-              <h4 class="text-center">RKS PERÚ</h4>
-              <a href="https://rksperu.com"></span></a>
+              <h4>RKS PERÚ<br>(eCommerce)</h4>
+              <a href="https://rksperu.com"></a>
             </div>
           </div>
         </div>
@@ -401,7 +404,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section-form text-center">
+  <section id="contact">
     <div class="titulos">
       <h1>Contactános</h1>
       <img src="assets/img/lines.svg" class="subrayado" alt="lines">
@@ -409,7 +412,7 @@
     <form id="google_form" class="gform">
       <div class="row">
         <div class="col-sm-6">
-          <input id="NOMBRE" type="text" name="NOMBRE" class="form-control mt-x-0" placeholder="Nombre" required>
+          <input id="NOMBRE" type="text" name="NOMBRE" class="form-control" placeholder="Nombre" required>
         </div>
         <div class="col-sm-6">
           <input id="EMAIL" type="email" name="EMAIL" class="form-control" placeholder="Email" required>
@@ -470,7 +473,7 @@
   <!-- FOOTER -->
   <footer class="site-footer">
 
-    <div class="text-center">
+    <div>
       <p class="copyright">2020.</br> Todos los derechos reservados ©</p>
     </div>
     <div class="redes">
