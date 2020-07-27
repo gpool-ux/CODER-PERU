@@ -42,7 +42,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/*
+
 @media (min-aspect-ratio: 16/9) {
   #preloader video {
     width: 100%;
@@ -55,7 +55,7 @@ body {
     width: auto;
     height: 100%;
   }
-} */
+}
 
 @-webkit-keyframes fadeOut {
   0% {
