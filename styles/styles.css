@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap"); */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../styles/font/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
+
+}
 
 /****************GLOBALS**************/
 * {
@@ -32,15 +40,14 @@ body {
 
 #preloader video {
   position: absolute;
-  max-width: 100%;
   width: auto;
   height: auto;
   min-width: 100%;
   min-height: 100%;
   top: 50%;
   left: 50%;
- transform: translate(-50%,-50%);
- z-index: 999999999999999999999999999;
+  transform: translate(-50%, -50%);
+
 }
 
 
@@ -701,11 +708,15 @@ a.github {
   .box svg {
     display: block;
     margin: auto;
-   /*  -webkit-animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
     -ms-animation: blink 1s infinite;
-    animation: blink 1s infinite; */
+    animation: blink 1s infinite;
 
+  }
+
+  video {
+    display: none;
   }
 
   .box2 svg,
