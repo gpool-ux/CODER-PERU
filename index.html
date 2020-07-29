@@ -17,8 +17,10 @@
 
   </script>
 </head>
-
 <body>
+
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
 
   <!--WIDGET -->
   <script type="text/javascript">
@@ -56,33 +58,11 @@
   <!--WIDGET -->
   <div id="preloader" class="box">
     <video src="./img/bgvideo.mp4" autoplay muted loop type="mp4"></video>
-    <svg width="170" height="170">
-      <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
-      <animateTransform attributeType="XML" attributeName="transform" type="translate"
-        values="0,0; 63,285; 170,-85; 0,0" begin="0s;" calcMode="linear" keyTimes="0; 0.7; 0.9; 1" dur="3.5s"
-        repeatCount="indefinite">
-      </animateTransform>
+    <svg width="500" height="500">
+      <image href="./img/LOGO.png" width="100%" max-width="100%" />
     </svg>
-
-    <div class="box2">
-      <svg width="170" height="170">
-        <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
-        <animateTransform attributeType="XML" attributeName="transform" type="translate"
-          values="0,100; -623,-15; -170,-85; 0,0" begin="0s" calcMode="linear" dur="3.5s" repeatCount="indefinite">
-        </animateTransform>
-      </svg>
-    </div>
-    <div class="box3">
-      <svg width="170" height="170">
-        <image href="./img/OVNI.png" x="10" y="10" width="150" height="150" />
-        <animateTransform attributeType="XML" attributeName="transform" type="translate"
-          values="0,0; 623,15; 170,-85; 0,0" begin="0s" calcMode="linear" dur="3.5s" repeatCount="indefinite">
-        </animateTransform>
-      </svg>
-    </div>
   </div>
 
-  <a onclick="topFunction()" id="scrollUp" title="Ir arriba"></a>
 
   <header id="header" class="header">
     <div class="logo">
@@ -251,8 +231,7 @@
       <div id="box_prevBtn"></div>
       <div id="box_nextBtn"></div>
     </div>
-
-
+  </div>
   <div class="menu">
     <a href="#header">INICIO</a>
     <a href="#about">SOBRE NOSOTROS</a>
@@ -260,7 +239,7 @@
     <a href="#portfolio">PORTAFOLIO</a>
     <a href="#contact">CONTACTO</a>
   </div>
-   </div>
+<a  id="scrollUp" title="Ir arriba"></a>
   <section id="about">
     <div class="contenedor">
       <div class="titulos">

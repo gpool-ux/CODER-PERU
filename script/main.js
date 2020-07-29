@@ -1,7 +1,7 @@
 ////////////Parallax///////////
 var headerBg = document.getElementById('slider')
 window.addEventListener('scroll', function () {
-  headerBg.style.opacity = 1 - +window.pageYOffset / 550 + ''
+  headerBg.style.opacity = 1 - +window.pageYOffset / 1000 + ''
   headerBg.style.top = +window.pageYOffset / 800 + 'px'
   headerBg.style.backgroundPositionY = +window.pageYOffset / 2 + 'px'
 })
@@ -13,7 +13,7 @@ function toggler() {
 }
 
 //////////BOTON IR ARRIBA/////////
-mybutton = document.getElementById("scrollUp");
+/* mybutton = document.getElementById("scrollUp");
 
 window.onscroll = function () {
   scrollFunction();
@@ -30,6 +30,31 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} */
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 40){
+      $('#scrollUp').fadeIn();
+
+    } else{
+      $('#scrollUp').fadeOut();
+    }
+  });
+
+  $("#scrollUp").click(function(){
+    $('html,body').animate({scrollTop : 0}, 100);
+  });
+
+
+});
+
+//////////////////SCROLLBAR CUSTOM///////////////////////
+
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////
