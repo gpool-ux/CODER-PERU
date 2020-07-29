@@ -161,6 +161,7 @@ hr {
 
 /****************LOGO********************/
 .logo {
+  position: relative;
   display: block;
   margin: auto;
   width: 450px;
@@ -172,6 +173,63 @@ hr {
   width: 500px;
   max-width: 100%;
   max-height: 122px;
+}
+
+.imgBx {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+
+}
+
+.imgBx:hover {
+  animation: bordes 2s infinite;
+  border: 3px solid;
+}
+
+.imgBx img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  transform-origin: left;
+
+}
+
+.imgBx:hover img:nth-child(1) {
+  transition: 4s;
+  transition-delay: 1s;
+  transform: translateX(50px);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.imgBx img:nth-child(2) {
+  width: 1920px;
+  height: 350px;
+  transform: translateX(400px) scaleX(0);
+  transform-origin: left;
+}
+
+.imgBx:hover img:nth-child(2) {
+  transition: 8s;
+  transform: translateX(-1000px) scaleX(1);
+
+}
+
+.imgBx img:nth-child(3) {
+  display: none;
+}
+
+.imgBx h2 {
+  color: #070f39;
+  font-size: 1.5em;
+  text-align: center !important;
+  font-family: "Orbitron", sans-serif;
 }
 
 /****************SLIDER********************/
@@ -263,14 +321,6 @@ section {
   border-right: 4px solid #070f39;
 }
 
-.col-2 img {
-  display: block;
-  margin: auto;
-  width: 400px;
-  max-width: 90%;
-  object-fit: cover;
-}
-
 .col-1 h1,
 .col-1 p {
   color: #070f39;
@@ -280,13 +330,7 @@ section {
   font-family: "Orbitron", sans-serif;
 }
 
-.col-2 h2 {
-  color: #070f39;
-  font-size: 25px;
-  margin: 20px;
-  text-align: center;
-  font-family: "Orbitron", sans-serif;
-}
+
 
 /************SERVICES************/
 #services {
@@ -336,7 +380,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
- display: none;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -978,5 +1022,30 @@ a.github {
 
   a.github {
     margin-top: 20px !important;
+  }
+
+  .imgBx {
+    width: 100%;
+  }
+
+  .imgBx:hover {
+    border: none;
+  }
+
+  .imgBx img:nth-child(3) {
+    max-width: 100%;
+    position: relative !important;
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .imgBx img:nth-child(1),
+  .imgBx img:nth-child(2) {
+    display: none;
+  }
+
+  .imgBx img:nth-child(3) {
+    display: block;
+    margin: auto;
   }
 }
