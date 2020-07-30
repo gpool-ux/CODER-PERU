@@ -1012,8 +1012,8 @@ a.github {
   @keyframes textAnimate {
     0% {
 
-      left: 0px;
-      top: 0px;
+      left: 50px;
+      top: 50px;
     }
 
     25% {
