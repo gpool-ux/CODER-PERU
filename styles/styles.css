@@ -110,32 +110,27 @@ html {
 
 @keyframes textAnimate {
   0% {
-
     left: 0px;
     top: 0px;
   }
 
   25% {
-
     left: 200px;
     right: 200px;
   }
 
   50% {
-
     left: 200px;
     right: 200px;
 
   }
 
   75% {
-
     left: 200px;
     right: 200px;
   }
 
   100% {
-
     left: 0;
     right: 200px;
   }
@@ -1009,8 +1004,7 @@ a.github {
     margin-top: 20px !important;
   }
 
-  @keyframes textAnimate {
-  
+  @-webkit-keyframes textAnimate {
     50% {
 
       left: 100px;
@@ -1030,8 +1024,31 @@ a.github {
       right: 200px;
     }
   }
-
 }
+
+@keyframes textAnimate {
+
+  50% {
+
+    left: 100px;
+    right: 200px;
+
+  }
+
+  75% {
+
+    left: 100px;
+    right: 200px;
+  }
+
+  100% {
+
+    left: 0;
+    right: 200px;
+  }
+}
+
+
 
 @media (max-width: 768px) {
 
