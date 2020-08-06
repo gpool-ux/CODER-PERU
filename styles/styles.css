@@ -906,6 +906,7 @@ a.github {
     height: 500px;
     padding-top: 35px;
     list-style: none !important;
+    z-index: 999999999999999999999;
   }
 
   .logo {
