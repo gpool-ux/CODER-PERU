@@ -898,7 +898,7 @@ a.github {
     top: -100%;
     left: 0;
     width: 100%;
-    padding: 50px 30px;
+   /*  padding: 50px 30px; */
     overflow: auto;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
     background: #541742;
@@ -910,9 +910,11 @@ a.github {
   }
 
   header.active ul {
-    top: 65px;
+    top: 62px;
     opacity: 1;
     transform: translateY(0);
+    justify-content: center;
+    height: 100vh;
   }
 
   header ul li a {
