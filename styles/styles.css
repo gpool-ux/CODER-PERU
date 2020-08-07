@@ -16,7 +16,6 @@
 
 body {
   font-size: 13px;
-
 }
 
 html {
@@ -331,6 +330,81 @@ section {
   max-width: 100%;
 }
 
+
+/**********THANOS**********/
+#thanos{
+  background: gold;
+}
+#imgBox {
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  background: gray;
+}
+
+#imgBox img {
+  max-width: 100%;
+}
+
+.js-plays {
+  padding: 20px;
+  position: absolute;
+  height: 470px;
+  width: 300px;
+  left: 0;
+  background: #0084ff;
+  opacity: 0;
+}
+
+.js-resets {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  background: #0084ff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
+#efectoThanos {
+  position: relative;
+  left: 0 !important;
+  top: -595px !important;
+  background-color: #007bb5;
+  text-align: center;
+  pointer-events: none;
+  border: 2px solid green;
+  width: 300px !important;
+  height: 500px !important;
+  margin: auto;
+  opacity: 0;
+z-index: 9999;
+}
+
+#efectoThanos canvas {
+  position: relative;
+  left: 0 !important;
+  top: -595px !important;
+  background-color: #007bb5;
+  text-align: center;
+  pointer-events: none;
+  border: 2px solid green;
+  width: 300px !important;
+  height: 500px !important;
+  margin: auto;
+  opacity: 0;
+  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+  z-index: 9999;
+}
+
+/***************************/
 .col-2 h2 {
   color: #070f39;
   display: block;
@@ -812,6 +886,7 @@ a.github {
   header {
     padding: 0 !important;
     position: sticky;
+    z-index: 55555555;
     /******MENU RESPONSIVE PERSIGUE*******/
     top: 0;
     border-bottom: 2px solid purple;
